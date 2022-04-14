@@ -51,7 +51,7 @@ export default function HomePage() {
           <div className="body-cart-description">
             <h4 className="body-cart-heading">HIM</h4>
             <p className="para-description">
-              Gifts for him to make him feel feel special
+              Gifts for him to make him feel special
             </p>
             <div className="btn-class">
             <Link to="/product"><button className="btn btn-round-1">Click here</button></Link>

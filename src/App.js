@@ -8,10 +8,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<HomePage/>} />
-        <Route path="/Signup" element={<HomePage/>}/>
-        <Route path="/Login" element={<HomePage/>}/>
-        <Route path="/Cart" element={<HomePage/>}/>
-        <Route path="/Wishlist" element={<HomePage/>}/>
+        <Route path="/signup" element={<HomePage/>}/>
+        <Route path="/login" element={<HomePage/>}/>
+        <Route path="/cart" element={<HomePage/>}/>
+        <Route path="/wishlist" element={<HomePage/>}/>
 
       </Routes>
       

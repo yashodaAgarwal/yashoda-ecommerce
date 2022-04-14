@@ -8,23 +8,23 @@ export default function Navigation(){
         <input className="search-bar" placeholder="Search" />
       </div>
       <div className="right-nav flex">
-        <Link to="/Login"><button
+        <Link to="/login"><button
           className="btn btn-round"
         >
           Login
         </button></Link>
-        <Link to="/Signup"><button
+        <Link to="/signup"><button
           className="btn btn-round"
         >
           Signup
         </button></Link>
         
-        <Link to="/Wishlist"><button
+        <Link to="/wishlist"><button
           className="badge-button badge-lg">
           <i className="fas fa-heart fa-2x"></i>
           <span className="icon-button-badge flex center icon-xl">16</span>
         </button></Link>
-        <Link to="/Cart"><button className="badge-button badge-lg"
+        <Link to="/cart"><button className="badge-button badge-lg"
         >
           <i className="fas fa-shopping-cart fa-2x"></i>
           <span className="icon-button-badge flex center icon-xl">16</span>

@@ -2,8 +2,8 @@ import '../../pages/home-page/home-page.css'
 import { NavLink } from 'react-router-dom';
 
 const Imagecard=({ category }) =>{
-  const cakecategory=category.category;
-  const { categoryName, image, alt } = cakecategory;
+  // const cakecategory=category.category;
+  const { categoryName, image, alt } = category.category;
   return (
     <section>
       <div className="image-card">   
