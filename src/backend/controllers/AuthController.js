@@ -15,6 +15,7 @@ const sign = require("jwt-encode");
 
 export const signupHandler = function (schema, request) {
   const { email, password, ...rest } = JSON.parse(request.requestBody);
+  console.log("error")
   try {
     // check if email already exists
     const foundUser = schema.users.findBy({ email });
@@ -77,7 +78,7 @@ export const loginHandler = function (schema, request) {
       foundUser.password = undefined;
       return new Response(200, {}, { foundUser, encodedToken });
     }
-    return new Response(
+    new Response(
       401,
       {},
       {
