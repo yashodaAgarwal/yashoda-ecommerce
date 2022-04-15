@@ -25,7 +25,7 @@ export default function HomePage() {
         <Link to="/product"><img
           className="template"
           alt="template"
-          src="https://thumbs.dreamstime.com/b/colorful-birthday-cupcakes-white-row-isolated-background-58505161.jpg"
+          src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"
           
         /></Link>
       </div>
@@ -54,7 +54,7 @@ export default function HomePage() {
               Gifts for him to make him feel special
             </p>
             <div className="btn-class">
-            <Link to="/product"><button className="btn btn-round-1">Click here</button></Link>
+            <Link to="/product"><button className="btn-round-1 ecom-btn">Click here</button></Link>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function HomePage() {
               Gifts for HER that works like a charm
             </p>
             <div className="btn-class">
-            <Link to="/product"><button className="btn btn-round-1">Click Here</button></Link>  
+            <Link to="/product"><button className="btn-round-1 ecom-btn">Click Here</button></Link>  
             </div>
           </div>
         </div>

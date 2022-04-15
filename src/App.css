@@ -1,14 +1,14 @@
 * {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    margin: 0; 
-  }
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin: 0;
+}
 
-  ::-webkit-scrollbar{
-    display: none;
-  }
+::-webkit-scrollbar {
+  display: none;
+}
 
-  body{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

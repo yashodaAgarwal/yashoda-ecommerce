@@ -1,0 +1,138 @@
+
+  .cart-image {
+    height: 10rem;
+    width: 12rem;
+    margin: 10px;
+  }
+  
+  .mycart-heading {
+   font-size: 24px;
+   padding: 10px;
+   border-bottom: 1px solid var(--grey-color);
+  }
+  
+  .mycart-container {
+    background-color: white;
+    box-shadow: 4px 4px 16px var(--shadow-color);
+    width:60rem;
+    height:80rem;
+    position: absolute;
+    top:20%;
+    left: 5%;
+  }
+  .cart-description{
+    padding-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .cart-info{
+    padding: 20px;
+  }
+.cart-price{
+  font-size: 8px;
+  line-height: 10px;
+  padding-top: 10px;
+  width:14rem;
+  justify-content: space-between;
+}
+  .qty-button{
+    border-radius: 5px;
+    margin: 25px 5px;
+  }
+.cart-title{
+  font-weight: 800;
+}
+  /* .plus-minus {
+    text-decoration: none;
+    color: var(--black-color);
+    border: 1px solid var(--light-gray);
+    border-radius: 100%;
+    padding: 5px;
+  }
+  
+  .number-of-items {
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .btn-remove {
+    padding: 5px;
+    width: 90%;
+    background-color: var(--gray-color);
+    border: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .btn-wishlist {
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
+    color: var(--gray-color);
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
+  .off-price {
+    color: var(--gray-color);
+  }
+  
+  .mycart-description {
+    align-self: center;
+    padding: 0px 10px;
+  }
+  
+  .price-container {
+    background-color: var(--white-color);
+    width: 20rem;
+    height: 18.75rem;
+    box-shadow: 1px 1px 10px var(--black-color);
+    position: absolute;
+    top: 25%;
+    left: 55%;
+  }
+  
+  .price-details-heading {
+    text-align: center;
+  }
+  
+  .list {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .price-items {
+    padding-right: 10px;
+    text-align: right;
+    float: right;
+  }
+  
+  .item {
+    padding: 10px;
+  }
+  
+  .saved-money {
+    color: var(--gray-color);
+  }
+  
+  .btn-place-order {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue-color);
+    border: none;
+    color: var(--white-color);
+  }
+  
+  .short-description {
+    padding-left: 5px;
+  }
+   */

@@ -18,6 +18,7 @@ export const products = [
     latest: true,
     categoryName: "Chocolate",
     rating: 4,
+    inStock:5
   },
   {
     _id: uuid(),
@@ -31,6 +32,7 @@ export const products = [
     latest: true,
     categoryName: "Chocolate",
     rating: 3,
+    inStock:5
   },
   {
     _id: uuid(),
@@ -44,19 +46,21 @@ export const products = [
     latest: true,
     categoryName: "Chocolate",
     rating: 2,
+    inStock:5
   },
   {
     _id: uuid(),
     image: "https://veenaazmanov.com/wp-content/uploads/2019/09/Homemade-Vanilla-Birthday-Cake21.jpg",
     alt: "Vanilla Cake",
     name: "Vanilla Cake",
-    description: "BEST Vanilla Birthday Cake with Vanilla Buttercream",
+    description: "Best Vanilla Birthday Cake with Vanilla Buttercream",
     price: 700,
     originalPrice: 1000.00 ,
     discount: 30,
     latest: true,
     categoryName: "Vanilla",
     rating: 3,
+    inStock:5
   },
   {
     _id: uuid(),
@@ -70,5 +74,6 @@ export const products = [
     latest: true,
     categoryName: "Red Velvet",
     rating: 4,
+    inStock:5
   },
 ];
