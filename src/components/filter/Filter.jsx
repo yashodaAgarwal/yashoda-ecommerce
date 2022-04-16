@@ -3,7 +3,7 @@ import { useFilter } from "../../context";
 
 const Filter = () => {
     const {
-        FilterState: { byCategory, sortBy, byRating, byPrice },
+        FilterState: { byCategory, sortBy, byRating },
         FilterDispatch,
       } = useFilter();
   return (

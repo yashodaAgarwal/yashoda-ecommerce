@@ -7,7 +7,7 @@ import { useFilter, useProduct } from "../../context";
 export default function ProductListing() {
   const {
     FilterState: { byCategory, sortBy, byRating, byPrice },
-    FilterDispatch,
+        
   } = useFilter();
   const { ProductState, ProductDispatch } = useProduct();
 
