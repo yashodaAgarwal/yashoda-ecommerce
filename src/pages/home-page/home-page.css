@@ -1,5 +1,7 @@
 .category-title {
+  padding-top: 25px;
   font-size: 3rem;
+  color:rgb(179, 73, 90);
 }
 .cake {
   position: absolute;
@@ -13,22 +15,22 @@
   width: 18.75rem;
   background-color: var(--white-color);
   text-decoration: none;
-  color:black;
+  color: black;
 }
-.nav, .nav-item{
-  background-color: white;
+.nav,
+.nav-item {
   box-shadow: 4px 4px 8px var(--shadow-color);
   margin-bottom: 10px;
-
+  background-color: rgb(210, 22, 126);
 }
 .image-card {
-  margin: 3.2rem 2rem;
+  margin: 3.2rem 2.5rem;
 }
 .template {
-  height: 31.25rem;
-  width: 89%;
+  height: 30rem;
+  width: 90%;
   left: 1.5rem;
-  margin: 0px 3.2rem;
+  margin: 5px 3.2rem;
 }
 .btn {
   text-align: center;
@@ -66,7 +68,7 @@
   margin-top: 1.25rem;
   text-align: center;
 }
-.btn:hover {
-  color: var(--white-color);
-  background-color: var(--blue-color);
+.btn-round-1{
+  border-radius: 40%;
+  padding: 14px;
 }
