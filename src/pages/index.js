@@ -1,4 +1,3 @@
-// import Cart from "./cart-page/CartPage";
 import HomePage from "./home-page/HomePage";
 import LoginPage from "./login-page/LoginPage";
 import ProductListing from "./product-listing/ProductListing";
