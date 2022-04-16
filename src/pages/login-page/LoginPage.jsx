@@ -26,18 +26,18 @@ export default function LoginPage() {
                 <input type="checkbox" />
                 <span class="span-style">Remember me</span>
               </div>
-              <a href="" class="forget">
+              <button href="" class="forget">
                 Forget Password
-              </a>
+              </button>
             </div>
             <div>
               <button class="btn login-btn">Login</button>
             </div>
             <div class="create-new-account">
-              <a href="">
+              <button>
                 Create new account{" "}
                 <i class="fas fa-angle-right create-icon"></i>
-              </a>
+              </button>
             </div>
           </form>
         </div>
