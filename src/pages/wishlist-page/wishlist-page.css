@@ -1,0 +1,27 @@
+.wishlist-card{
+  border:1px dotted gray;
+  height:350px;
+  width:250px;
+
+}
+.wishlist-container{
+  padding: 10px 10px;
+  width:250px;
+  display:flex;
+  margin:0px
+}
+.wishlist-heading{
+  font-size:24px;
+  padding:30px;
+}
+.wishlist-flex{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 38px;
+  margin:0px 100px;
+  padding: 10px 30px;
+  width:78%;
+  height:80%;
+  box-shadow: 4px -4px 4px var(--shadow-color);
+}
