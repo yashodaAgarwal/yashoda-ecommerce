@@ -6,28 +6,28 @@ import { useProduct } from "../../context";
 export default function Wishlist() {
   const {
     ProductState: { wishlist, cart },
-    ProductDispatch,
+    productDispatch,
   } = useProduct();
   return (
     <div>
       <Navigation />
       <h1 class="wishlist-heading center">My Wishlist</h1>
       <div className="wishlist-flex">
-        {wishlist.map((w) => {
+        {wishlist.map((item) => {
           return (
             <div className="wishlist-container">
               <div className="wishlist-card">
-                <img className="card-image" src={w.image} alt={w.alt}></img>
+                <img className="card-image" src={item.image} alt={item.alt}></img>
                 <div class="description">
-                  <p class="card-heading center">{w.name}</p>
-                  <p className="product-description">{w.description}</p>
+                  <p class="card-heading center">{item.name}</p>
+                  <p className="product-description">{item.description}</p>
                   <div class="flex product-price">
-                    <p>Rs. {w.price}</p>
-                    <p className="original-price">Rs. {w.originalPrice} </p>
-                    <p>{w.discount}% off</p>
+                    <p>Rs. {item.price}</p>
+                    <p className="original-price">Rs. {item.originalPrice} </p>
+                    <p>{item.discount}% off</p>
                   </div>
                   <div className="flex product-button">
-                    {cart.some((c) => c.id === w.id) ? (
+                    {cart.some((cartitem) => cartitem.id === item.id) ? (
                       <Link to="/Cart">
                         <button class="ecom-btn">Move To Cart</button>
                       </Link>
@@ -35,7 +35,7 @@ export default function Wishlist() {
                       <button
                         class="ecom-btn"
                         onClick={() =>
-                          ProductDispatch({ type: "ADD_TO_CART", payload: w })
+                          productDispatch({ type: "ADD_TO_CART", payload: item })
                         }
                       >
                         Add to Cart
@@ -44,9 +44,9 @@ export default function Wishlist() {
                     <button
                       class="ecom-btn"
                       onClick={() =>
-                        ProductDispatch({
+                        productDispatch({
                           type: "REMOVE_FROM_WISHLIST",
-                          payload: w,
+                          payload: item,
                         })
                       }
                     >

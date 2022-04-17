@@ -5,7 +5,7 @@ import { useProduct } from "../../context";
 const ContainerCard = ({ product }) => {
   const {
     ProductState: { cart, wishlist },
-    ProductDispatch,
+    productDispatch,
   } = useProduct();
   const prod = product.product;
 
@@ -32,7 +32,7 @@ const ContainerCard = ({ product }) => {
             <button
               class="ecom-btn"
               onClick={() =>
-                ProductDispatch({ type: "ADD_TO_CART", payload: prod })
+                productDispatch({ type: "ADD_TO_CART", payload: prod })
               }
             >
               Add to Cart
@@ -42,7 +42,7 @@ const ContainerCard = ({ product }) => {
             <button
               class="ecom-btn"
               onClick={() =>
-                ProductDispatch({ type: "REMOVE_FROM_WISHLIST", payload: prod })
+                productDispatch({ type: "REMOVE_FROM_WISHLIST", payload: prod })
               }
             >
               Remove
@@ -51,7 +51,7 @@ const ContainerCard = ({ product }) => {
             <button
               class="ecom-btn"
               onClick={() =>
-                ProductDispatch({ type: "ADD_TO_WISHLIST", payload: prod })
+                productDispatch({ type: "ADD_TO_WISHLIST", payload: prod })
               }
             >
               Add to Wishlist
