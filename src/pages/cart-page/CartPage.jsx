@@ -118,7 +118,7 @@ export default function Cart() {
         </div>
         <hr />
         <div class="item saved-money">
-          <p class="list">You will save 10$ in this order</p>
+          <p class="list">You will save {Discount} in this order</p>
         </div>
         <button class="btn-place-order">Place Order</button>
       </div>
