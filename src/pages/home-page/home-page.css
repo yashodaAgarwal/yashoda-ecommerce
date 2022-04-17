@@ -71,4 +71,6 @@
 .btn-round-1{
   border-radius: 40%;
   padding: 14px;
+  background-color:rgb(194, 49, 100) ;
+  border: none;
 }

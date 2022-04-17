@@ -11,6 +11,9 @@ export default function Wishlist() {
   return (
     <div>
       <Navigation />
+      
+      {wishlist.length>0?(
+        <div>
       <h1 class="wishlist-heading center">My Wishlist</h1>
       <div className="wishlist-flex">
         {wishlist.map((item) => {
@@ -58,7 +61,10 @@ export default function Wishlist() {
             </div>
           );
         })}
-      </div>
+      </div></div>):(
+        <div className="No-wishlist">No Wishlist items</div>
+      )}
+      
     </div>
   );
 }

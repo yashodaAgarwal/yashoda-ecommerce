@@ -1,5 +1,5 @@
 import "./App.css";
-import { HomePage, ProductListing, Wishlist } from "./pages";
+import { Cart, HomePage, ProductListing, Wishlist } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <Route path="/product" element={<ProductListing />} />
         <Route path="/signup" element={<HomePage />} />
         <Route path="/login" element={<HomePage />} />
-        <Route path="/cart" element={<HomePage />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
     </div>
