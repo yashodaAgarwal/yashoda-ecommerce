@@ -14,7 +14,7 @@
   background-color: white;
   box-shadow: 4px 4px 16px var(--shadow-color);
   width: 60rem;
-  height: 80rem;
+  height: 60rem;
   position: absolute;
   top: 20%;
   left: 5%;
@@ -97,4 +97,5 @@
 .remove-btn:hover{
   background-color: rgb(194, 49, 100);
   color:white;
+  padding: 3px;
 }

@@ -25,3 +25,8 @@
   height:80%;
   box-shadow: 4px -4px 4px var(--shadow-color);
 }
+.No-wishlist{
+  text-align: center;
+  padding:50px;
+  font-size: 32px;
+}

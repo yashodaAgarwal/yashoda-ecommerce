@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { Navigation } from "../../components";
-import { useProduct } from "../../context/ProductContext";
+import { useProduct } from "../../context";
 import "./cart-page.css";
 
 export default function Cart() {
@@ -62,7 +62,8 @@ export default function Cart() {
                     <option key={x + 1}>{x + 1}</option>
                   ))}
                 </select>
-                <button className="remove-btn"
+                <button
+                  className="remove-btn"
                   onClick={() =>
                     productDispatch({ type: "REMOVE_FROM_CART", payload: item })
                   }
@@ -71,13 +72,9 @@ export default function Cart() {
                 </button>
                 {wishlist.some(
                   (wishlistItem) => wishlistItem.id === item.id
-                ) ?  (
-                  <button
-                    class="ecom-btn"
-                  >
-                    Add to Wishlist
-                  </button>
-                ):(
+                ) ? (
+                  <button class="ecom-btn">Add to Wishlist</button>
+                ) : (
                   <button
                     class="ecom-btn"
                     onClick={() =>
@@ -89,7 +86,7 @@ export default function Cart() {
                   >
                     Add to Wishlist
                   </button>
-                ) }
+                )}
               </div>
             </div>
           );

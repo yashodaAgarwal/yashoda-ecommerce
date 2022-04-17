@@ -136,5 +136,6 @@
 .ecom-btn:hover{
   background-color: white;
   border: 2px solid rgb(194, 49, 100);
-  color:black
+  color:black;
+  padding: 2.25px;
 }
