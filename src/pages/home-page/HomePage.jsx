@@ -3,10 +3,13 @@ import axios from "axios";
 import { Imagecard, Navigation } from "../../components";
 import "./home-page.css";
 import { Link } from "react-router-dom";
-import { useServer } from "../../context";
+import { useServer,useFilter } from "../../context";
 
 export default function HomePage() {
   const { state, dispatch } = useServer();
+  const {
+    FilterDispatch,
+  } = useFilter();
   useEffect(() => {
     (async () => {
       try {
@@ -22,7 +25,9 @@ export default function HomePage() {
     <div>
       <Navigation />
       <div>
-        <Link to="/product"><img
+        <Link to="/product"><img onClick={() => {
+                  FilterDispatch({ type: "Clear_Filter" });
+                }}
           className="template"
           alt="template"
           src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"

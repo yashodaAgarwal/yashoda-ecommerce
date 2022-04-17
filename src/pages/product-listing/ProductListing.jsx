@@ -9,7 +9,7 @@ export default function ProductListing() {
     FilterState: { byCategory, sortBy, byRating, byPrice },
         
   } = useFilter();
-  const { ProductState, ProductDispatch } = useProduct();
+  const { ProductState, productDispatch } = useProduct();
 
   const transformProduct = () => {
     let sortedProduct = ProductState.productdata;
@@ -37,12 +37,12 @@ export default function ProductListing() {
     (async () => {
       try {
         const response = await axios.get("/api/products");
-        ProductDispatch({ type: "savedata", payload: response.data.products });
+        productDispatch({ type: "savedata", payload: response.data.products });
       } catch (error) {
         console.log(error, "Could not load data");
       }
     })();
-  }, [ProductDispatch]);
+  }, [productDispatch]);
 
   return (
     <>

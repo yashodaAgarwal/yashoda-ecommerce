@@ -4,7 +4,7 @@ import { productReducer } from "../reducer";
 const ProductFromServer = createContext(null);
 
 const ProductProvider = ({ children }) => {
-  const [ProductState, ProductDispatch] = useReducer(productReducer, {
+  const [ProductState, productDispatch] = useReducer(productReducer, {
     productdata: [],
     loading: true,
     cart: [],
@@ -12,7 +12,7 @@ const ProductProvider = ({ children }) => {
   });
 
   return (
-    <ProductFromServer.Provider value={{ ProductState, ProductDispatch }}>
+    <ProductFromServer.Provider value={{ ProductState, productDispatch }}>
       {children}
     </ProductFromServer.Provider>
   );

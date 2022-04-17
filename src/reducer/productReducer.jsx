@@ -9,7 +9,7 @@ const productReducer = (state, action) => {
     case "REMOVE_FROM_CART":
       return {
         ...state,
-        cart: state.cart.filter((c) => c.id !== action.payload.id),
+        cart: state.cart.filter((cartitem) => cartitem.id !== action.payload.id),
       };
 
     case "ADD_TO_WISHLIST":
@@ -21,14 +21,14 @@ const productReducer = (state, action) => {
     case "REMOVE_FROM_WISHLIST":
       return {
         ...state,
-        wishlist: state.wishlist.filter((w) => w.id !== action.payload.id),
+        wishlist: state.wishlist.filter((item) => item.id !== action.payload.id),
       };
 
     case "CHANGE_IN_QTY":
       return {
         ...state,
-        cart: state.cart.filter((c) =>
-          c.id === action.payload.id ? (c.qty = action.payload.qty) : c.qty
+        cart: state.cart.filter((cartitem) =>
+          cartitem.id === action.payload.id ? (cartitem.qty = action.payload.qty) : cartitem.qty
         ),
       };
 
