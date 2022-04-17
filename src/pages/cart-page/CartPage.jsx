@@ -37,7 +37,7 @@ export default function Cart() {
         <div className="mycart-heading ">Shopping Cart ({cart.length})</div>
         {cart.map((item) => {
           return (
-            <div className="flex">
+            <div className="flex" key={item.id}>
               <img className="cart-image" src={item.image} alt={item.alt} />
               <div className="cart-info">
                 <p className="cart-title">{item.name}</p>
