@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { Navigation } from "../../components";
 import { useProduct } from "../../context/ProductContext";
 import "./cart-page.css";
-// import { MdDelete } from "react-icons/md";
 
 export default function Cart() {
   const {
@@ -108,7 +107,7 @@ export default function Cart() {
           <span class="price-items">-{Discount}</span>
         </div>
         <div class="item">
-          <p class="list">Delievery charges</p>
+          <p class="list">Delivery charges</p>
           <span class="price-items">FREE</span>
         </div>
         <hr />
