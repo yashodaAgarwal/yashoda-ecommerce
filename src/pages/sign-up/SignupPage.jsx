@@ -115,7 +115,7 @@ export default function Signup() {
             </div>
             <div className="create-new-account">
               <Link to="/Login">
-                Already have an account{" "}
+                Already have an account
                 <i className="fas fa-angle-right create-icon"></i>
               </Link>
             </div>

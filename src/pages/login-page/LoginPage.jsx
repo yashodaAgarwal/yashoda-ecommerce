@@ -53,7 +53,7 @@ export default function LoginPage() {
                 onChange={handleChange("email")}
                 type="email"
                 value={email}
-                required
+                
               />
             </div>
             <div class="data">
@@ -65,7 +65,6 @@ export default function LoginPage() {
                 type="password"
                 value={password}
                 placeholder="***********"
-                required
               />
             </div>
             <div>
