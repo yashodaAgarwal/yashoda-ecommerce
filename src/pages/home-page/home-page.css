@@ -1,5 +1,5 @@
 .category-title {
-  padding-top: 25px;
+  padding-top: 1.563rem;
   font-size: 3rem;
   color:rgb(179, 73, 90);
 }
@@ -17,19 +17,29 @@
   text-decoration: none;
   color: black;
 }
+.left-nav{
+  width: 50%;
+}
+.category-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 70px;
+}
 .nav,
 .nav-item {
   box-shadow: 4px 4px 8px var(--shadow-color);
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   background-color: rgb(210, 22, 126);
+  max-width: 100%;
 }
 .image-card {
   margin: 3.2rem 2.5rem;
 }
 .template {
   height: 30rem;
-  width: 90%;
-  left: 1.5rem;
+  width: 94%;
   margin: 5px 3.2rem;
 }
 .btn {
@@ -45,7 +55,7 @@
   padding: 5px;
   width: 31.25rem;
   height: 18.75rem;
-  box-shadow: 1px 1px 10px var(--black-color);
+  box-shadow: 1px 1px 0.625rem var(--black-color);
 }
 .body-cart-image {
   height: 100%;
@@ -56,7 +66,7 @@
   margin-top: 5rem;
   display: block;
   margin-right: auto;
-  font-size: 35px;
+  font-size: 2.12rem;
   font-weight: 800;
 }
 .para-description {
@@ -70,7 +80,7 @@
 }
 .btn-round-1{
   border-radius: 40%;
-  padding: 14px;
+  padding: 0.875rem;
   background-color:rgb(194, 49, 100) ;
   border: none;
 }

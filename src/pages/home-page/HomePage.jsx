@@ -28,15 +28,15 @@ export default function HomePage() {
             onClick={() => {
               FilterDispatch({ type: "Clear_Filter" });
             }}
-            className="template"
+            className="template img-fluid"
             alt="template"
             src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"
           />
         </Link>
       </div>
       <h1 className="center category-title">Shop By Category</h1>
-      <section>
-        <ul className="flex no-bullet-list">
+      <section className="Category-card">
+        <ul className="flex no-bullet-list category-flex">
           {state.categorydata.map((category) => (
             <li key={category.id}>
               <Imagecard category={{ category }} />
@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="">
             <img
               src="https://cdn.igp.com/f_auto,q_auto,t_pnopt10prodlp/products/p-choc-o-nuts-deluxe-hamper-122930-m.jpg"
-              className="body-cart-image"
+              className="body-cart-image img-fluid"
               alt="Cake"
             />
           </div>

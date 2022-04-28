@@ -1,6 +1,5 @@
 * {
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -11,4 +10,23 @@
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  *{
+    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  *{
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  *{
+    font-size:16px;
+  }
 }
