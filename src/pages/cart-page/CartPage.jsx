@@ -73,7 +73,7 @@ export default function Cart() {
                 {wishlist.some(
                   (wishlistItem) => wishlistItem.id === item.id
                 ) ? (
-                  <button class="ecom-btn">Add to Wishlist</button>
+                  <button class ="ecom-btn">Already in Wishlist</button>
                 ) : (
                   <button
                     class="ecom-btn"

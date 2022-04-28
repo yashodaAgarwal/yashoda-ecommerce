@@ -95,7 +95,8 @@
   font-size:14px
 }
 .remove-btn:hover{
-  background-color: rgb(194, 49, 100);
+  background-color:rgb(194, 49, 100);
   color:white;
   padding: 3px;
+  border:2px solid rgb(194, 49, 100);
 }

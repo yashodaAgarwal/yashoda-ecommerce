@@ -7,7 +7,6 @@ import { useFilter, useProduct } from "../../context";
 export default function ProductListing() {
   const {
     FilterState: { byCategory, sortBy, byRating, byPrice },
-        
   } = useFilter();
   const { ProductState, productDispatch } = useProduct();
 
@@ -49,16 +48,17 @@ export default function ProductListing() {
       <Navigation />
       <div className="main">
         <div class="main-body-sec">
-      <Filter />
-      <div class="right-body-section">
-        <h1 class="showing-heading">Products</h1>
-        <div class="product-flex">
-          {transformProduct().map((product) => (
-            <ContainerCard product={{ product }} />
-          ))}
+          <Filter />
+          <div class="right-body-section">
+            <h1 class="showing-heading">Products</h1>
+            <div class="product-flex">
+              {transformProduct().map((product) => (
+                <ContainerCard product={{ product }} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-      </div></div>
     </>
   );
 }

@@ -1,6 +1,15 @@
 import "./App.css";
-import { Cart, HomePage, ProductListing, Wishlist } from "./pages";
+import {
+  Cart,
+  HomePage,
+  LoginPage,
+  PageNotFound,
+  ProductListing,
+  Signup,
+  Wishlist,
+} from "./pages";
 import { Routes, Route } from "react-router-dom";
+import { RequiresAuth } from "./RequiresAuth";
 
 function App() {
   return (
@@ -8,10 +17,25 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<ProductListing />} />
-        <Route path="/signup" element={<HomePage />} />
-        <Route path="/login" element={<HomePage />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/cart"
+          element={
+            <RequiresAuth>
+              <Cart />
+            </RequiresAuth>
+          }
+        />
+        <Route
+          path="/wishlist"
+          element={
+            <RequiresAuth>
+              <Wishlist />
+            </RequiresAuth>
+          }
+        />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
