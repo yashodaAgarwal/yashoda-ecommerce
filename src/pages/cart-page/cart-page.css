@@ -38,7 +38,7 @@
 }
 .qty-button {
   border-radius: 0.313rem;
-  margin: 20.313rem 0.313rem;
+  margin: 2.5rem 0.313rem;
 }
 .cart-title {
   font-weight: 800;
@@ -92,7 +92,7 @@
   text-align: center;
   border-radius: 0.313rem;
   margin: 0px 0.313rem ;
-  font-size:0.875rem
+  font-size:14px
 }
 .remove-btn:hover{
   background-color:rgb(194, 49, 100);
