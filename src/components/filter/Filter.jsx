@@ -1,7 +1,7 @@
 import React from "react";
 import { useFilter } from "../../context";
 
-const Filter = () => {
+const Filter = () => { 
     const {
         FilterState: { byCategory, sortBy, byRating },
         FilterDispatch,
