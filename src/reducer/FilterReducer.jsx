@@ -2,13 +2,8 @@ const FilterReducer = (state, action) => {
   switch (action.type) {
     case "SORT":
       return {
-        ...state,
+        ...state, 
         sortBy: action.payload,
-      };
-    case "PRICE":
-      return {
-        ...state,
-        byPrice: action.payload,
       };
     case "RATING":
       return {

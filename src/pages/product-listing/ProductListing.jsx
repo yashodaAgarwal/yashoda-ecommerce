@@ -41,7 +41,7 @@ export default function ProductListing() {
       } catch (error) {
         console.log(error, "Could not load data");
       }
-    })();
+    })(); 
   }, [productDispatch]);
 
   return (

@@ -4,21 +4,22 @@
     left: 50%;
     background-color: var(--white-color);
     transform: translate(-50%, -50%);
-    width: 410px;
-    height: 450px;
-    padding: 30px;
-    box-shadow: 1px 1px 10px var(--black-color);
+    width: 25.7rem;
+    height: 25rem;
+    padding: 1.875rem;
+    box-shadow: 1px 1px 0.625rem var(--black-color);
     font-weight: 800;
   }
   
   .login-container .login-heading {
-    font-size: 35px;
+    font-size: 2.2rem;
   }
   
   .login-container form .data {
-    height: 45px;
+    height: 2.8rem;
     width: 100%;
-    margin: 40px 0;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
   }
   form .data input {
     height: 100%;
@@ -26,8 +27,7 @@
   }
   
   form .btn button {
-    /* margin-top: 15px; */
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
     background-color: var(--blue-color);
     color: var(--white-color);
@@ -37,23 +37,14 @@
   button:hover {
     cursor: pointer;
   }
-  .remember-me {
-    margin-right: 70px;
-    justify-content: space-between;
-    width: 100%;
-  }
-  a {
-    color: var(--blue-color);
-    text-decoration: none;
-  }
   
   .create-new-account {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
   }
-  
-  .create-new-account a {
-    color: var(--black-color);
+  .create-new-account a{
+    text-decoration: none;
+    color:black
   }
   input {
     border: 1px solid lightgray;
@@ -70,7 +61,17 @@
   }
   .login-btn{
     width: 100%;
-    background-color: var(--blue-color);
-    padding: 10px;
-    margin-top: 20px;
+    background-color: rgb(194, 49, 100);
+    border : 2px solid rgb(194, 49, 100);
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+  } 
+  .login-btn:hover{
+    background-color: white;
+    border:2px solid rgb(194, 49, 100);
+    color: rgb(194, 49, 100);
+    font-weight:800;
   }
+  .alert-items{
+    margin-bottom: 0.625rem;
+}

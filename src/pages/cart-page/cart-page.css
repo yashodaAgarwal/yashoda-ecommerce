@@ -1,18 +1,18 @@
 .cart-image {
   height: 10rem;
   width: 12rem;
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .mycart-heading {
-  font-size: 24px;
-  padding: 10px;
+  font-size: 1.5rem;
+  padding: 0.625rem;
   border-bottom: 1px solid var(--grey-color);
 }
 
 .mycart-container {
   background-color: white;
-  box-shadow: 4px 4px 16px var(--shadow-color);
+  box-shadow: 4px 4px 1rem var(--shadow-color);
   width: 60rem;
   height: 60rem;
   position: absolute;
@@ -21,24 +21,24 @@
   flex-basis: 70%;
 }
 .cart-description {
-  padding-top: 5px;
-  font-size: 12px;
+  padding-top: 0.313rem;
+  font-size: 0.75rem;
   font-style: italic;
   font-weight: 500;
 }
 .cart-info {
-  padding: 20px;
+  padding: 1.25rem;
 }
 .cart-price {
-  font-size: 8px;
-  line-height: 10px;
-  padding-top: 10px;
+  font-size: 0.5rem;
+  line-height: 0.625rem;
+  padding-top: 0.625rem;
   width: 14rem;
   justify-content: space-between;
 }
 .qty-button {
-  border-radius: 5px;
-  margin: 25px 5px;
+  border-radius: 0.313rem;
+  margin: 2.5rem 0.313rem;
 }
 .cart-title {
   font-weight: 800;
@@ -48,7 +48,7 @@
   background-color: var(--white-color);
   width: 20rem;
   height: 18.75rem;
-  box-shadow: 1px 1px 10px var(--shadow-color);
+  box-shadow: 1px 1px 0.625rem var(--shadow-color);
   position: absolute;
   top: 20%;
   left: 70%;
@@ -59,18 +59,18 @@
 
 .list {
   display: inline;
-  padding: 10px;
-  margin: 10px;
+  padding: 0.625rem;
+  margin: 0.625rem;
 }
 
 .price-items {
-  padding-right: 10px;
+  padding-right: 0.625rem;
   text-align: right;
   float: right;
 }
 
 .item {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .saved-money {
@@ -80,7 +80,7 @@
 .btn-place-order {
   text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: rgb(194, 49, 100);
   border: none;
   color: var(--white-color);
@@ -90,12 +90,13 @@
   background-color: white;
   padding: 3px;
   text-align: center;
-  border-radius: 5px;
-  margin: 0px 5px ;
+  border-radius: 0.313rem;
+  margin: 0px 0.313rem ;
   font-size:14px
 }
 .remove-btn:hover{
-  background-color: rgb(194, 49, 100);
+  background-color:rgb(194, 49, 100);
   color:white;
   padding: 3px;
+  border:2px solid rgb(194, 49, 100);
 }
