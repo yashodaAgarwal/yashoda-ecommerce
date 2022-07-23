@@ -24,7 +24,7 @@ export default function HomePage() {
   return (
     <div>
       <Navigation />
-      <div>
+      {/* <div>
         <Link to="/product"><img onClick={() => {
                   FilterDispatch({ type: "Clear_Filter" });
                 }}
@@ -33,7 +33,7 @@ export default function HomePage() {
           src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"
           
         /></Link>
-      </div>
+      </div> */}
       <h1 className="center category-title">Shop By Category</h1>
       <section>
         <ul className="flex no-bullet-list">

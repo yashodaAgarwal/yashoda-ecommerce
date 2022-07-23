@@ -31,11 +31,10 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   name="category"
-                  value={byCategory}
-                  onChange={() =>
-                    FilterDispatch({ type: "CATEGORY", payload: "Chocolate" })
+                  value="Chocolate"
+                  onChange={(e)=>FilterDispatch({type:"CATEGORY", payload:e.target.value})
                   }
-                  checked={byCategory && byCategory === "Chocolate"}
+                  checked={byCategory.find(category => category ==="Chocolate")}
                 ></input>
                 chocolate cake
               </label>
@@ -43,10 +42,10 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   name="category"
-                  onChange={() =>
-                    FilterDispatch({ type: "CATEGORY", payload: "Vanilla" })
+                  value="Vanilla"
+                  onChange={(e)=>FilterDispatch({type:"CATEGORY", payload:e.target.value})
                   }
-                  checked={byCategory && byCategory === "Vanilla"}
+                  checked={byCategory.find(category => category ==="Vanilla")}
                 ></input>
                 vanilla cake
               </label> 
@@ -54,10 +53,10 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   name="category"
-                  onChange={() =>
-                    FilterDispatch({ type: "CATEGORY", payload: "Red Velvet" })
+                  value="Red Velvet"
+                  onChange={(e)=>FilterDispatch({type:"CATEGORY", payload:e.target.value})
                   }
-                  checked={byCategory && byCategory === "Red Velvet"}
+                  checked={byCategory.find(category => category ==="Red Velvet")}
                 ></input>
                 Red Velvet
               </label>
@@ -65,13 +64,10 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   name="category"
-                  onChange={() =>
-                    FilterDispatch({
-                      type: "CATEGORY",
-                      payload: "Butterscotch",
-                    })
+                  value={byCategory}
+                  onChange={(e)=>FilterDispatch({type:"CATEGORY", payload:e.target.value})
                   }
-                  checked={byCategory && byCategory === "Butterscotch"}
+                  checked={byCategory.find(category => category ==="Butterscotch")}
                 ></input>
                 Butterscotch
               </label>
@@ -82,7 +78,7 @@ const Filter = () => {
               </span>
               <label className="filter-item">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="rating"
                   value={byRating}
                   onChange={() =>
@@ -94,7 +90,7 @@ const Filter = () => {
               </label>
               <label className="filter-item">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="rating"
                   value={byRating}
                   onChange={() =>
@@ -106,7 +102,7 @@ const Filter = () => {
               </label>
               <label className="filter-item">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="rating"
                   value={byRating}
                   onChange={() =>

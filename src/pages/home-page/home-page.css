@@ -1,12 +1,13 @@
 .category-title {
   padding-top: 25px;
-  font-size: 3rem;
-  color:rgb(179, 73, 90);
+  font-size: 2rem;
+  color:black;
 }
 .cake {
   position: absolute;
   width: 18.75rem;
   height: 12.5rem;
+  border-radius: 20px;
 }
 .text {
   position: relative;
@@ -25,6 +26,7 @@
 }
 .image-card {
   margin: 3.2rem 2.5rem;
+  
 }
 .template {
   height: 30rem;

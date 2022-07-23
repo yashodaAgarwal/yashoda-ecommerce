@@ -16,13 +16,18 @@ const FilterReducer = (state, action) => {
         byRating: action.payload,
       };
     case "CATEGORY":
-      return {
-        ...state,
-        byCategory: action.payload,
-      };
+      const { byCategory } = state;
+      return byCategory.includes(action.payload)
+        ? {
+            ...state,
+            byCategory: byCategory.filter(
+              (category) => category !== action.payload
+            ),
+          }
+        : { ...state, byCategory: [...byCategory, action.payload] };
     case "Clear_Filter":
       return {
-        byCategory: null,
+        byCategory: [],
         sortBy: null,
         byRating: 0,
         byPrice: null,
