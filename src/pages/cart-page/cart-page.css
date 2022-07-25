@@ -11,13 +11,12 @@
 }
 
 .mycart-container {
-  background-color: white;
-  box-shadow: 4px 4px 1rem var(--shadow-color);
-  width: 60rem;
-  height: 60rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px var(--shadow-color);
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 10%;
   flex-basis: 70%;
 }
 .cart-description {
