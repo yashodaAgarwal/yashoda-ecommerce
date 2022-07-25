@@ -12,6 +12,7 @@ const Imagecard = ({ category }) => {
   return (
     <section>
       <div className="image-card">
+      
         <img className="cake" src={image} alt={alt} />
         <NavLink
           to="/product"

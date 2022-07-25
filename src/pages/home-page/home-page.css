@@ -92,7 +92,7 @@
   background-color:rgb(194, 49, 100) ;
   border: none;
 }
-/* @media only screen and (min-width: 700px) {
+/* @media only screen and (min-width: 760px) {
   .search-bar{
     display: none;
   }
@@ -108,9 +108,12 @@
   .search-bar{
     display: none;
   }
+  .Lbtn{
+    display: none;
+  }
   .left-nav{
     width: 20%;
-    padding-right: 20px;
+    padding-right: 120px;
   }
   .nav-heading{
     padding-left:10px;
@@ -127,10 +130,10 @@
     width: 10rem;
   }
   .image-card{
-    margin:6rem 8rem
+    margin:6rem 2rem
   } 
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .left-nav{
     width: 20%;
     padding-right: 320px;
@@ -144,4 +147,4 @@
     width:25rem
   }
   
-}
+} */
