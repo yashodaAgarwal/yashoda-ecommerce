@@ -12,8 +12,8 @@ export default function LoginPage() {
     password: "",
   });
   const test = {
-    email: "adarshbalika@gmail.com",
-    password: "adarshbalika",
+    email: "yashodaagarwal@gmail.com",
+    password: "123456789",
   };
   const { email, password } = login;
   const [isError, setIsError] = useState("");
