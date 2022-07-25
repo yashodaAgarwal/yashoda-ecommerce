@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@google-pay/button-react": "^3.0.0",
     "@mui/material": "^5.6.1",
     "dayjs": "^1.11.0",
     "jwt-decode": "^3.1.2",

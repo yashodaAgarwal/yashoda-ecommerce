@@ -36,7 +36,7 @@ export default function HomePage() {
       </div> */}
       <h1 className="center category-title">Shop By Category</h1>
       <section>
-        <ul className="flex no-bullet-list">
+        <ul className="flex no-bullet-list flex-wrap">
           {state.categorydata.map((category) => (
             <li key={category.id}>
               <Imagecard category={{ category }} />
@@ -44,7 +44,7 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
-      <div className="body-cart flex">
+      <div className="body-cart">
         <div className="body-cart-container flex">
           <div className="">
             <img

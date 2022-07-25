@@ -7,7 +7,8 @@ const FilterProvider = ({ children }) => {
   const [FilterState, FilterDispatch] = useReducer(FilterReducer, {
     byCategory: [],
     sortBy: null,
-    byRating: 0
+    byRating: 0,
+    searchQuery:"",
   });
   return (
     <FilterContext.Provider value={{ FilterState, FilterDispatch }}>

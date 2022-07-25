@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Navigation } from "../../components";
 import { useProduct } from "../../context";
+import GooglePayButton from "@google-pay/button-react";
 import "./cart-page.css";
 
 export default function Cart() {
@@ -13,7 +14,7 @@ export default function Cart() {
   const [Total, setTotal] = useState(0);
   const [Discount, setDiscount] = useState(0);
   const [OriginalTotal, setOriginalTotal] = useState(0);
-
+  var price = Total.toString();
   useEffect(() => {
     setOriginalTotal(
       cart.reduce((acc, curr) => acc + Number(curr.originalPrice * curr.qty), 0)
@@ -33,6 +34,7 @@ export default function Cart() {
   return (
     <div>
       <Navigation />
+      <div className="cart-flex">
       <div className="mycart-container">
         <div className="mycart-heading ">Shopping Cart ({cart.length})</div>
         {cart.map((item) => {
@@ -117,7 +119,62 @@ export default function Cart() {
           <p class="list">You will save {Discount} in this order</p>
         </div>
         <button class="btn-place-order">Place Order</button>
+        <hr />
+        
+      <GooglePayButton
+        environment="TEST"
+        paymentRequest={{
+          apiVersion: 2,
+          apiVersionMinor: 0,
+          allowedPaymentMethods: [
+            {
+              type: 'CARD',
+              parameters: {
+                allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                allowedCardNetworks: ['MASTERCARD', 'VISA'],
+              },
+              tokenizationSpecification: {
+                type: 'PAYMENT_GATEWAY',
+                parameters: {
+                  gateway: 'example',
+                  gatewayMerchantId: 'exampleGatewayMerchantId',
+                },
+              },
+            },
+          ],
+          merchantInfo: {
+            merchantId: '12345678901234567890',
+            merchantName: 'Demo Merchant',
+          },
+          transactionInfo: {
+            totalPriceStatus: 'FINAL',
+            totalPriceLabel: 'Total',
+            totalPrice:price,
+            currencyCode: 'INR',
+            countryCode: 'IN',
+          },
+          shippingAddressRequired: true,
+          callbackIntents: ['SHIPPING_ADDRESS', 'PAYMENT_AUTHORIZATION'],
+        }}
+        onLoadPaymentData={paymentRequest => {
+          console.log('Success', paymentRequest);
+        }}
+        onPaymentAuthorized={paymentData => {
+            console.log('Payment Authorised Success', paymentData)
+            return { transactionState: 'SUCCESS'}
+          }
+        }
+        onPaymentDataChanged={paymentData => {
+          console.log('On Payment Data Changed', paymentData)
+          return { }
+        }
+      }
+        existingPaymentMethodRequired='false'
+          buttonColor='white'
+          className="btn-Gpay-order"
+      />
       </div>
+    </div>
     </div>
   );
 }

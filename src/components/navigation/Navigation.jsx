@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { useAuth, useProduct } from "../../context";
+import { useAuth, useProduct,useFilter } from "../../context";
 import "../../pages/home-page/home-page.css";
 
 export default function Navigation() {
   const {
     ProductState: { cart, wishlist },
   } = useProduct();
+  const {FilterDispatch} = useFilter()
   const { isLogin, setIsLogin } = useAuth();
   return (
     <nav className="flex nav-item">
@@ -13,7 +14,7 @@ export default function Navigation() {
         <Link to="/">
           <p className="nav-heading">Delicious Cakes</p>
         </Link>
-        <input className="search-bar" placeholder="Search" />
+        <input className="search-bar" placeholder="Search" onChange={(e)=>{FilterDispatch({type:"Search_By_Filter",payload:e.target.value})}}/>
       </div>
       <div className="right-nav flex">
         <Link to="/login">
@@ -29,7 +30,11 @@ export default function Navigation() {
           )}
         </Link>
         <Link to="/signup">
-          <button className="btn btn-round">Signup</button>
+        {isLogin ? (
+            <></>
+          ) : (
+            <button className="btn btn-round">SignUp</button>
+          )}
         </Link>
         <Link to="/Wishlist">
           <button className="badge-button badge-lg">

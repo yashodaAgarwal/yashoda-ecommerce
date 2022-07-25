@@ -14,10 +14,7 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: 4px 4px 16px var(--shadow-color);
-  position: absolute;
   top: 20%;
-  left: 10%;
-  flex-basis: 70%;
 }
 .cart-description {
   padding-top: 0.313rem;
@@ -42,17 +39,19 @@
 .cart-title {
   font-weight: 800;
 }
-
+.cart-flex{
+  display: flex;
+  justify-content:space-around ;
+  padding-top: 50px;
+}
 .Price-container {
   background-color: var(--white-color);
   width: 20rem;
-  height: 18.75rem;
+  height: 20rem;
   box-shadow: 1px 1px 0.625rem var(--shadow-color);
-  position: absolute;
   padding: 10px;
   border-radius: 10px;
   top: 20%;
-  left: 65%;
 }
 .price-details-heading {
   text-align: center;
@@ -81,10 +80,16 @@
 .btn-place-order {
   text-align: center;
   width: 100%;
-  padding: 0.625rem;
+  padding: 0.65rem;
   background-color: rgb(194, 49, 100);
   border: none;
   color: var(--white-color);
+}
+.btn-Gpay-order {
+  text-align: center;
+  width: 100%;
+
+  background-color: rgb(194, 49, 100);
 }
 .remove-btn {
   border:2px solid rgb(194, 49, 100);
@@ -100,4 +105,21 @@
   color:white;
   padding: 3px;
   border:2px solid rgb(194, 49, 100);
+}
+iframe{
+  padding:0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .cart-flex{
+    flex-direction: column;
+    column-gap: 40px;
+  }
+  .Price-container{
+    width: auto;
+  }
+  .cart-image{
+    width:7rem;
+    margin:0
+  }
 }

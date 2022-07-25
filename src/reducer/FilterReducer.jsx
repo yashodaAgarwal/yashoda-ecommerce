@@ -20,12 +20,17 @@ const FilterReducer = (state, action) => {
             ),
           }
         : { ...state, byCategory: [...byCategory, action.payload] };
+    case "Search_By_Filter":{
+      console.log(action.payload)
+      return {...state,searchQuery:action.payload}
+    }
     case "Clear_Filter":
       return {
         byCategory: [],
         sortBy: null,
         byRating: 0,
         byPrice: null,
+        searchQuery:""
       };
     default:
       return state;

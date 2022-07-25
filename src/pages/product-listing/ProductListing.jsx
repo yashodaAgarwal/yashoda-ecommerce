@@ -6,7 +6,7 @@ import { useFilter, useProduct } from "../../context";
 
 export default function ProductListing() {
   const {
-    FilterState: { byCategory, sortBy, byRating},
+    FilterState: { byCategory, sortBy, byRating,searchQuery},
   } = useFilter();
   const { ProductState, productDispatch } = useProduct();
 
@@ -21,11 +21,16 @@ export default function ProductListing() {
     if (byRating) {
       sortedProduct = sortedProduct.filter((prod) => prod.rating >= byRating);
     }
-
-    if (byCategory) {
-      return byCategory.length === 0
-        ? sortedProduct
-        : sortedProduct.filter((product) =>
+    if(searchQuery){
+      sortedProduct=sortedProduct.filter((prod)=>{
+        return prod.name.toLowerCase().includes(searchQuery.toLowerCase())
+      })
+    }
+    if (byCategory.length === 0) {
+      <></>
+    }
+    else{
+      sortedProduct = sortedProduct.filter((product) =>
             byCategory.includes(product.categoryName)
           );
     }

@@ -112,3 +112,8 @@
   color: black;
   padding: 2.25px;
 }
+@media only screen and (max-width: 760px) {
+  .filter-sidebar{
+    display: none;
+  }
+}
