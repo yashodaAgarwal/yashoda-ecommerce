@@ -11,9 +11,7 @@ const ContainerCard = ({ product }) => {
 
   return (
     <div class="card-container">
-      <h4 class="card-with-badge">
-        <i class="fas fa-heart"></i>
-      </h4>
+      
       <img class="card-image" src={prod.image} alt={prod.alt} />
       <div class="description">
         <p class="card-heading">{prod.name}</p>

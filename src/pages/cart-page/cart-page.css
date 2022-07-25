@@ -49,8 +49,10 @@
   height: 18.75rem;
   box-shadow: 1px 1px 0.625rem var(--shadow-color);
   position: absolute;
+  padding: 10px;
+  border-radius: 10px;
   top: 20%;
-  left: 70%;
+  left: 65%;
 }
 .price-details-heading {
   text-align: center;
