@@ -3,11 +3,13 @@ import axios from "axios";
 import { Imagecard, Navigation } from "../../components";
 import "./home-page.css";
 import { Link } from "react-router-dom";
-import { useServer, useFilter } from "../../context";
+import { useServer,useFilter } from "../../context";
 
 export default function HomePage() {
   const { state, dispatch } = useServer();
-  const { FilterDispatch } = useFilter();
+  const {
+    FilterDispatch,
+  } = useFilter();
   useEffect(() => {
     (async () => {
       try {
@@ -23,20 +25,18 @@ export default function HomePage() {
     <div>
       <Navigation />
       {/* <div>
-        <Link to="/product">
-          <img
-            onClick={() => {
-              FilterDispatch({ type: "Clear_Filter" });
-            }}
-            className="template img-fluid"
-            alt="template"
-            src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"
-          />
-        </Link>
+        <Link to="/product"><img onClick={() => {
+                  FilterDispatch({ type: "Clear_Filter" });
+                }}
+          className="template"
+          alt="template"
+          src="https://assets.winni.in/sf-img/live/visuals/home/desktop/2022/4/1649652860648.jpeg"
+          
+        /></Link>
       </div> */}
       <h1 className="center category-title">Shop By Category</h1>
-      <section className="Category-card">
-        <ul className="flex no-bullet-list category-flex">
+      <section>
+        <ul className="flex no-bullet-list">
           {state.categorydata.map((category) => (
             <li key={category.id}>
               <Imagecard category={{ category }} />
@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="">
             <img
               src="https://cdn.igp.com/f_auto,q_auto,t_pnopt10prodlp/products/p-choc-o-nuts-deluxe-hamper-122930-m.jpg"
-              className="body-cart-image img-fluid"
+              className="body-cart-image"
               alt="Cake"
             />
           </div>
@@ -59,16 +59,9 @@ export default function HomePage() {
               Gifts for him to make him feel special
             </p>
             <div className="btn-class">
-              <Link to="/product">
-                <button
-                  className="btn-round-1 "
-                  onClick={() => {
-                    FilterDispatch({ type: "Clear_Filter" });
-                  }}
-                >
-                  Click here
-                </button>
-              </Link>
+            <Link to="/product"><button className="btn-round-1 " onClick={() => {
+                  FilterDispatch({ type: "Clear_Filter" });
+                }}>Click here</button></Link>
             </div>
           </div>
         </div>
@@ -86,16 +79,9 @@ export default function HomePage() {
               Gifts for HER that works like a charm
             </p>
             <div className="btn-class">
-              <Link to="/product">
-                <button
-                  className="btn-round-1"
-                  onClick={() => {
-                    FilterDispatch({ type: "Clear_Filter" });
-                  }}
-                >
-                  Click Here
-                </button>
-              </Link>
+            <Link to="/product"><button className="btn-round-1" onClick={() => {
+                  FilterDispatch({ type: "Clear_Filter" });
+                }}>Click Here</button></Link>  
             </div>
           </div>
         </div>
